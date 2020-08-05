@@ -1,0 +1,46 @@
+
+.heading{
+    color:dodgerblue;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    text-align: center;
+    font-size: 300%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #73D2DE;
+
+    }
+.profile {
+    border: 5px solid #73D2DE;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+hr{
+    color: white;
+}
+
+.github{
+    border: 5px solid darkslategrey;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    }
+.github_h {
+    color: darkgrey;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    text-align: center;
+    font-size: 300%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+     }
+.link_github{text-decoration: none;
+    color: white;
+    padding: 14px 25px;
+             }
+.in_progress {
+    margin: 0 auto;
+    display: block;
+   }
+
+

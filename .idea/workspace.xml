@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="240e2bb8-ee17-422c-a68e-ea60058e8875" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fGbw7uULDwj1pXyxMQvEPb2TiU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TEST.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/TEST.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.TEST.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="240e2bb8-ee17-422c-a68e-ea60058e8875" name="Default Changelist" comment="" />
+      <created>1595847612764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595847612764</updated>
+      <workItem from="1595847613936" duration="3363000" />
+      <workItem from="1595866941366" duration="5725000" />
+      <workItem from="1595913842093" duration="36000" />
+      <workItem from="1595913895093" duration="58000" />
+      <workItem from="1595942186147" duration="2048000" />
+      <workItem from="1595993569457" duration="3628000" />
+      <workItem from="1596004981987" duration="872000" />
+      <workItem from="1596168264270" duration="2710000" />
+      <workItem from="1596640332386" duration="4343000" />
+      <workItem from="1596645026579" duration="910000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="42" key="#Inspections" timestamp="1596640529497">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="306" y="42" key="#Inspections/0.0.1360.728@0.0.1360.728" timestamp="1596640529497" />
+    <state x="459" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596005192299">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="459" y="68" key="#com.intellij.ide.macro.MacrosDialog/0.0.1360.728@0.0.1360.728" timestamp="1596005192299" />
+    <state x="459" y="118" key="FileChooserDialogImpl" timestamp="1596005184268">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="459" y="118" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1596005184268" />
+    <state x="181" y="9" key="SettingsEditor" timestamp="1595913877485">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="181" y="9" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1595913877485" />
+  </component>
+</project>
