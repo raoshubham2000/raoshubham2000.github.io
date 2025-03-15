@@ -37,6 +37,14 @@
             --retro-yellow: #ffff00;
             --retro-orange: #ff7700;
             --retro-purple: #aa00ff;
+            
+            /* Reduced size variables */
+            --section-padding: 84px 0;  /* 70% of 120px */
+            --card-padding: 1.4rem;     /* 70% of 2rem */
+            --heading-margin: 2.1rem;   /* 70% of 3rem */
+            --icon-size-lg: 42px;       /* 70% of 60px */
+            --icon-size-md: 28px;       /* 70% of 40px */
+            --avatar-size: 168px;       /* 70% of 240px */
         }
         
         body {
@@ -46,7 +54,7 @@
             font-family: var(--font-body);
             line-height: 1.5;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 0.84rem;  /* 70% of 1.2rem */
             image-rendering: pixelated;
         }
         
@@ -88,27 +96,28 @@
         /* 8-bit style hover effect */
         .project-card {
             transition: transform var(--transition-speed);
-            border: 4px solid #ffffff;
-            box-shadow: 4px 4px 0px #000000;
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
         }
         
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 8px 8px 0px #000000;
+            transform: translateY(-3.5px);  /* 70% of -5px */
+            box-shadow: 5.6px 5.6px 0px #000000;  /* 70% of 8px */
         }
         
         /* Pixelated skill pills */
         .skill-pill {
-            padding: 8px 16px;
-            margin: 8px;
+            padding: 5.6px 11.2px;  /* 70% of 8px 16px */
+            margin: 5.6px;  /* 70% of 8px */
             border-radius: 0;
             background-color: var(--retro-dark-blue);
             color: white;
             font-weight: 500;
-            border: 2px solid white;
-            box-shadow: 3px 3px 0px #000000;
+            border: 1.4px solid white;  /* 70% of 2px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
             transition: all 0.2s;
-            text-shadow: 1px 1px 0 #000;
+            text-shadow: 0.7px 0.7px 0 #000;  /* 70% of 1px */
+            font-size: 0.7rem;  /* 70% of 1rem */
         }
         
         .dark-mode .skill-pill {
@@ -157,17 +166,17 @@
 
         /* Pixelated avatar container */
         #avatar-container {
-            width: 240px;
-            height: 240px;
+            width: var(--avatar-size);
+            height: var(--avatar-size);
             border-radius: 0;
             background: repeating-linear-gradient(
                 45deg,
                 var(--retro-pink),
-                var(--retro-pink) 10px,
-                var(--retro-purple) 10px,
-                var(--retro-purple) 20px
+                var(--retro-pink) 7px,  /* 70% of 10px */
+                var(--retro-purple) 7px,  /* 70% of 10px */
+                var(--retro-purple) 14px  /* 70% of 20px */
             );
-            box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.8);
+            box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.8);  /* 70% of 10px */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -200,25 +209,25 @@
         }
         
         .avatar-text {
-            font-size: 5rem;
+            font-size: 3.5rem;  /* 70% of 5rem */
             color: white;
             font-weight: bold;
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+            text-shadow: 2.1px 2.1px 0px rgba(0, 0, 0, 0.8);  /* 70% of 3px */
             font-family: var(--font-heading);
         }
         
         /* 8-bit style cards */
         .achievement-card {
-            border: 4px solid #ffffff;
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
             border-radius: 0;
             transition: all 0.4s ease;
-            padding: 2rem;
+            padding: var(--card-padding);
             text-align: center;
             position: relative;
             z-index: 1;
             overflow: hidden;
             background-color: var(--retro-dark-blue);
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
 
         /* Retro animation */
@@ -232,9 +241,9 @@
             background: repeating-linear-gradient(
                 45deg,
                 rgba(255, 255, 255, 0.1),
-                rgba(255, 255, 255, 0.1) 10px,
-                rgba(255, 255, 255, 0) 10px,
-                rgba(255, 255, 255, 0) 20px
+                rgba(255, 255, 255, 0.1) 7px,
+                rgba(255, 255, 255, 0) 7px,
+                rgba(255, 255, 255, 0) 14px
             );
             z-index: -1;
             transition: all 0.4s ease;
@@ -244,9 +253,9 @@
             background: repeating-linear-gradient(
                 45deg,
                 rgba(0, 255, 0, 0.1),
-                rgba(0, 255, 0, 0.1) 10px,
-                rgba(0, 255, 0, 0) 10px,
-                rgba(0, 255, 0, 0) 20px
+                rgba(0, 255, 0, 0.1) 7px,
+                rgba(0, 255, 0, 0) 7px,
+                rgba(0, 255, 0, 0) 14px
             );
         }
         
@@ -256,17 +265,17 @@
         }
         
         .achievement-card .icon-circle {
-            width: 70px;
-            height: 70px;
+            width: var(--icon-size-lg);  /* 70% of 60px */
+            height: var(--icon-size-lg);  /* 70% of 60px */
             border-radius: 0;
             background: var(--retro-green);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto 1.5rem;
+            margin: 0 auto 1.05rem;  /* 70% of 1.5rem */
             transition: all 0.3s ease;
-            border: 3px solid #ffffff;
-            box-shadow: 3px 3px 0px #000000;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
         }
         
         .achievement-card:hover .icon-circle {
@@ -275,30 +284,30 @@
         
         .achievement-card .icon-circle i {
             color: white;
-            font-size: 2rem;
-            text-shadow: 1px 1px 0 #000;
+            font-size: 1.4rem;  /* 70% of 2rem */
+            text-shadow: 0.7px 0.7px 0 #000;  /* 70% of 1px */
         }
         
         /* Retro timeline style */
         .education-card {
             position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--retro-green);
+            padding-left: 21px;  /* 70% of 30px */
+            margin-bottom: 10.5px;  /* 70% of 15px */
+            border-left: 2.8px solid var(--retro-green);  /* 70% of 4px */
         }
         
         .education-card:before {
             content: "▶";
             position: absolute;
-            left: -15px;
+            left: -10.5px;  /* 70% of -15px */
             top: 0;
-            width: 25px;
-            height: 25px;
+            width: 17.5px;  /* 70% of 25px */
+            height: 17.5px;  /* 70% of 25px */
             color: var(--retro-green);
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 14px;  /* 70% of 20px */
+            line-height: 17.5px;  /* 70% of 25px */
             text-align: center;
-            background-color: var(--dark-bg);
+            background-color: var(--light-bg);
         }
         
         /* Retro typography */
@@ -306,9 +315,9 @@
             font-family: var(--font-heading);
             font-weight: 700;
             letter-spacing: -0.02em;
-            margin-bottom: 0.75em;
+            margin-bottom: 0.53em;  /* 70% of 0.75em */
             text-transform: uppercase;
-            text-shadow: 2px 2px 0px #000000;
+            text-shadow: 1.4px 1.4px 0px #000000;  /* 70% of 2px */
         }
         
         .display-2 {
@@ -316,8 +325,9 @@
             letter-spacing: -0.03em;
             line-height: 1.3;
             color: var(--retro-yellow);
-            text-shadow: 3px 3px 0px #000000, 
-                         6px 6px 0px rgba(0, 0, 0, 0.5);
+            text-shadow: 2.1px 2.1px 0px #000000,  /* 70% of 3px */
+                         4.2px 4.2px 0px rgba(0, 0, 0, 0.5);  /* 70% of 6px */
+            font-size: 2.45rem;  /* 70% of 3.5rem (default display-2) */
         }
         
         /* Enhanced hero section with retro game background */
@@ -350,15 +360,15 @@
         
         /* Retro navbar */
         .navbar {
-            padding: 0.5rem 0;
+            padding: 0.35rem 0;  /* 70% of 0.5rem */
             transition: all 0.4s ease;
             border-radius: 0;
             font-family: var(--font-heading);
-            border-bottom: 3px solid var(--retro-green);
+            border-bottom: 2.1px solid var(--retro-green);  /* 70% of 3px */
         }
         
         .navbar.scrolled {
-            padding: 0.4rem 0;
+            padding: 0.28rem 0;  /* 70% of 0.4rem */
             backdrop-filter: none;
             -webkit-backdrop-filter: none;
         }
@@ -374,30 +384,30 @@
         }
         
         .navbar-brand {
-            font-size: 1.2rem;
+            font-size: 0.84rem;  /* 70% of 1.2rem */
             font-weight: 700;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.35px;  /* 70% of -0.5px */
             position: relative;
             color: var(--retro-yellow) !important;
-            text-shadow: 2px 2px 0px #000000;
+            text-shadow: 1.4px 1.4px 0px #000000;  /* 70% of 2px */
             transition: all 0.3s ease;
         }
         
         .dark-mode .navbar-brand {
             color: var(--retro-yellow) !important;
-            text-shadow: 2px 2px 0px #000000;
+            text-shadow: 1.4px 1.4px 0px #000000;  /* 70% of 2px */
         }
         
         .nav-link {
             font-weight: 500;
             position: relative;
-            margin: 0 0.4rem;
-            padding: 0.4rem 0;
-            font-size: 0.8rem;
-            letter-spacing: 0.3px;
+            margin: 0 0.28rem;  /* 70% of 0.4rem */
+            padding: 0.28rem 0;  /* 70% of 0.4rem */
+            font-size: 0.56rem;  /* 70% of 0.8rem */
+            letter-spacing: 0.21px;  /* 70% of 0.3px */
             color: var(--retro-light-blue) !important;
             transition: all 0.3s ease;
-            text-shadow: 1px 1px 0px #000000;
+            text-shadow: 0.7px 0.7px 0px #000000;  /* 70% of 1px */
         }
         
         .dark-mode .nav-link {
@@ -410,7 +420,7 @@
             bottom: 0;
             left: 0;
             width: 0;
-            height: 3px;
+            height: 2.1px;  /* 70% of 3px */
             background: var(--retro-yellow);
             transition: width 0.3s ease;
             transform-origin: left;
@@ -432,41 +442,41 @@
         
         /* Pixelated cards */
         .card {
-            border: 4px solid #ffffff;
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
             border-radius: 0;
             overflow: hidden;
             transition: all 0.4s ease;
             background: var(--retro-dark-blue);
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         .dark-mode .card {
             background: var(--retro-dark-blue);
             color: var(--retro-green);
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 10px 10px 0px #000000;
+            transform: translateY(-3.5px);  /* 70% of -5px */
+            box-shadow: 5.6px 5.6px 0px #000000;  /* 70% of 8px */
         }
         
         .dark-mode .card:hover {
-            box-shadow: 10px 10px 0px #000000;
+            box-shadow: 5.6px 5.6px 0px #000000;  /* 70% of 8px */
         }
         
         /* Retro section styling with pixelated dividers */
         section {
-            padding: 120px 0;
+            padding: var(--section-padding);
             position: relative;
         }
         
         .section-divider {
-            height: 50px;
+            height: 35px;  /* 70% of 50px */
             position: relative;
             background: transparent;
             z-index: 1;
-            margin-bottom: 30px;
+            margin-bottom: 21px;  /* 70% of 30px */
         }
         
         .section-divider::after {
@@ -479,9 +489,9 @@
             background: repeating-linear-gradient(
                 90deg,
                 var(--retro-green),
-                var(--retro-green) 20px,
-                transparent 20px,
-                transparent 40px
+                var(--retro-green) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 14px  /* 70% of 20px */
             );
         }
         
@@ -489,16 +499,16 @@
             background: repeating-linear-gradient(
                 90deg,
                 var(--retro-green),
-                var(--retro-green) 20px,
-                transparent 20px,
-                transparent 40px
+                var(--retro-green) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 14px  /* 70% of 20px */
             );
         }
         
         /* Retro style buttons */
         .btn {
             border-radius: 0;
-            padding: 0.8rem 2rem;
+            padding: 0.56rem 1.4rem;  /* 70% of 0.8rem 2rem */
             font-weight: 700;
             transition: all 0.2s ease;
             position: relative;
@@ -506,40 +516,41 @@
             z-index: 1;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            box-shadow: 4px 4px 0px #000000;
-            border: 3px solid #ffffff;
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            font-size: 0.7rem;  /* 70% of 1rem (default button) */
         }
         
         .btn-primary {
             background: var(--retro-green);
-            border: 3px solid #ffffff;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
             color: #000000;
-            text-shadow: 1px 1px 0 #ffffff;
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
         
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 6px 6px 0px #000000;
+            transform: translateY(-2.1px);  /* 70% of -3px */
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
             background: var(--retro-yellow);
             border-color: #ffffff;
         }
         
         .btn-outline-primary {
-            border: 3px solid var(--retro-green);
+            border: 2.1px solid var(--retro-green);  /* 70% of 3px */
             color: var(--retro-green);
             background: transparent;
-            text-shadow: 1px 1px 0 #000000;
+            text-shadow: 0.7px 0.7px 0 #000000;  /* 70% of 1px */
         }
         
         .btn-outline-primary:hover {
             background: var(--retro-green);
             color: #000000;
-            transform: translateY(-3px);
-            text-shadow: 1px 1px 0 #ffffff;
+            transform: translateY(-2.1px);  /* 70% of -3px */
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
         
         .dark-mode .btn-outline-primary {
-            border-color: var(--retro-green);
+            border-color: var(--retro-green);  /* 70% of 3px */
             color: var(--retro-green);
         }
         
@@ -550,22 +561,22 @@
         
         /* Pixel art style icons */
         .icon-circle {
-            width: 40px;
-            height: 40px;
+            width: var(--icon-size-md);  /* 70% of 40px */
+            height: var(--icon-size-md);  /* 70% of 40px */
             border-radius: 0;
             background-color: var(--retro-green);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1rem;
-            border: 2px solid #ffffff;
-            box-shadow: 2px 2px 0px #000000;
+            margin-bottom: 0.7rem;  /* 70% of 1rem */
+            border: 1.4px solid #ffffff;  /* 70% of 2px */
+            box-shadow: 1.4px 1.4px 0px #000000;  /* 70% of 2px */
         }
 
         .icon-circle i {
             color: #000000;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 0 #ffffff;
+            font-size: 1.05rem;  /* 70% of 1.5rem */
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
 
         .dark-mode .icon-circle {
@@ -579,61 +590,71 @@
         
         /* Retro section headers */
         .section-header {
-            font-size: 2.5rem;
+            font-size: 1.75rem;  /* 70% of 2.5rem */
             font-weight: 800;
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: var(--heading-margin);
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: 0.7rem;  /* 70% of 1rem */
             color: var(--retro-yellow);
-            text-shadow: 3px 3px 0 #000000;
+            text-shadow: 2.1px 2.1px 0 #000000;  /* 70% of 3px */
             text-transform: uppercase;
         }
         
         .section-header::after {
             content: '';
-            width: 100px;
-            height: 6px;
+            width: 70px;  /* 70% of 100px */
+            height: 4.2px;  /* 70% of 6px */
             background: repeating-linear-gradient(
                 90deg,
                 var(--retro-green),
-                var(--retro-green) 10px,
-                var(--retro-yellow) 10px,
-                var(--retro-yellow) 20px
+                var(--retro-green) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 7px,  /* 70% of 10px */
+                var(--retro-yellow) 14px  /* 70% of 20px */
             );
             display: block;
-            margin: 0.5rem auto 0;
+            margin: 0.35rem auto 0;  /* 70% of 0.5rem */
         }
         
-        /* Retro Contact Form */
+        /* Retro Contact Form - Improved visibility */
         #contact-form .form-control {
             border-radius: 0;
-            padding: 0.8rem 1.2rem;
-            border: 3px solid #ffffff;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: var(--retro-green);
+            padding: 0.56rem 0.84rem;  /* 70% of 0.8rem 1.2rem */
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            background-color: rgba(0, 40, 80, 0.7);  /* Lighter background */
+            color: #ffffff;  /* White text for better visibility */
             transition: all 0.3s ease;
-            box-shadow: 3px 3px 0px #000000;
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
             font-family: var(--font-body);
-            font-size: 1.2rem;
+            font-size: 0.84rem;  /* 70% of 1.2rem */
         }
 
         #contact-form .form-control:focus {
             border-color: var(--retro-yellow);
             box-shadow: 3px 3px 0px #000000, 0 0 8px var(--retro-yellow);
+            background-color: rgba(0, 60, 120, 0.8);  /* Slightly lighter when focused */
+        }
+
+        #contact-form label {
+            color: var(--retro-yellow);  /* Yellow labels for better visibility */
+            text-shadow: 1px 1px 0px #000000;
+            font-weight: bold;
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            letter-spacing: 0.5px;
         }
 
         #contact-form button.btn-primary {
             background: var(--retro-green);
-            border: 3px solid #ffffff;
-            box-shadow: 4px 4px 0px #000000;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
             color: #000000;
-            text-shadow: 1px 1px 0 #ffffff;
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
             transition: all 0.2s;
         }
 
         #contact-form button.btn-primary:hover {
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
             background: var(--retro-yellow);
         }
         
@@ -642,28 +663,28 @@
         .dark-mode .achievement-card {
             background: var(--retro-dark-blue);
             color: var(--retro-green);
-            border: 4px solid #00ff00;
+            border: 2.8px solid #00ff00;  /* 70% of 4px */
         }
         
         /* Fix GitHub icon for retro theme */
         .dark-mode .btn-outline-dark {
             color: var(--retro-green);
-            border: 3px solid var(--retro-green);
-            box-shadow: 4px 4px 0px #000000;
+            border: 2.1px solid var(--retro-green);  /* 70% of 3px */
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
         }
         
         .dark-mode .btn-outline-dark:hover {
             background-color: var(--retro-green);
             color: #000000;
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         /* Achievement cards with retro game styling */
         .dark-mode #achievements .achievement-card {
             background: var(--retro-dark-blue) !important;
             color: var(--retro-green) !important;
-            border: 4px solid var(--retro-green);
-            box-shadow: 6px 6px 0px #000000 !important;
+            border: 2.8px solid var(--retro-green);  /* 70% of 4px */
+            box-shadow: 4.2px 4.2px 0px #000000 !important;  /* 70% of 6px */
         }
         
         .dark-mode #achievements .achievement-card h3,
@@ -675,7 +696,7 @@
         
         .dark-mode #achievements .icon-circle {
             background-color: var(--retro-green);
-            border: 2px solid #ffffff;
+            border: 1.4px solid #ffffff;  /* 70% of 2px */
         }
 
         .dark-mode #achievements .icon-circle i {
@@ -686,7 +707,7 @@
         .dark-mode #achievements .achievement-card.bg-white,
         .dark-mode #achievements .card.bg-white {
             background: var(--retro-dark-blue) !important;
-            border: 4px solid var(--retro-green);
+            border: 2.8px solid var(--retro-green);  /* 70% of 4px */
         }
         
         /* Pixelated achievement cards */
@@ -696,21 +717,21 @@
             overflow: hidden;
             transition: all 0.4s ease;
             height: 100%;
-            border: 4px solid #ffffff;
-            box-shadow: 6px 6px 0px #000000;
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         .achievement-card .icon-circle {
-            width: 60px;
-            height: 60px;
+            width: var(--icon-size-lg);  /* 70% of 60px */
+            height: var(--icon-size-lg);  /* 70% of 60px */
             border-radius: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.05rem;  /* 70% of 1.5rem */
             transition: all 0.3s ease;
-            border: 3px solid #ffffff;
-            box-shadow: 3px 3px 0px #000000;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
         }
         
         .achievement-card:hover .icon-circle {
@@ -719,15 +740,15 @@
         
         .achievement-card .icon-circle i {
             color: #000000;
-            font-size: 2rem;
-            text-shadow: 1px 1px 0 #ffffff;
+            font-size: 1.4rem;  /* 70% of 2rem */
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
         
         /* Retro summary styling */
         .dark-mode #about .professional-summary,
         .dark-mode #about p {
             color: var(--retro-green) !important;
-            text-shadow: 0 0 5px rgba(51, 255, 51, 0.5);
+            text-shadow: 0 0 3.5px rgba(51, 255, 51, 0.5);  /* 70% of 5px */
         }
         
         /* Override for better retro visibility */
@@ -743,14 +764,14 @@
         /* Fix for GitHub icon with retro styling */
         .dark-mode a[href*="github"] {
             color: var(--retro-green);
-            border: 3px solid var(--retro-green);
-            box-shadow: 3px 3px 0px #000000;
+            border: 2.1px solid var(--retro-green);  /* 70% of 3px */
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
         }
         
         .dark-mode a[href*="github"]:hover {
             background-color: var(--retro-green);
             color: #000000;
-            box-shadow: 5px 5px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         /* All achievement card elements with retro styling */
@@ -773,7 +794,7 @@
         /* Pixel art effect for project cards */
         .project-card .card-img-top {
             image-rendering: pixelated;
-            border-bottom: 4px solid #ffffff;
+            border-bottom: 2.8px solid #ffffff;  /* 70% of 4px */
         }
         
         /* Project card overlay title hidden for clean look */
@@ -783,89 +804,90 @@
         
         /* Retro skill pills */
         .skill-pill {
-            padding: 8px 16px;
-            margin: 8px;
+            padding: 5.6px 11.2px;  /* 70% of 8px 16px */
+            margin: 5.6px;  /* 70% of 8px */
             border-radius: 0;
             font-weight: 500;
             transition: all 0.3s ease;
             display: inline-block;
-            border: 2px solid #ffffff;
-            box-shadow: 3px 3px 0px #000000;
+            border: 1.4px solid #ffffff;  /* 70% of 2px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
             text-transform: uppercase;
+            font-size: 0.7rem;  /* 70% of 1rem */
         }
         
         /* Additional skill category spacing */
         #cloud-skills, #programming-skills, #visualization-skills, #tools-skills {
-            margin-bottom: 10px;
+            margin-bottom: 7px;  /* 70% of 10px */
         }
         
         /* Pixelated project card */
         .project-card {
             position: relative;
             overflow: hidden;
-            margin-bottom: 20px;
-            border: 4px solid #ffffff;
+            margin-bottom: 14px;  /* 70% of 20px */
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
             border-radius: 0;
-            box-shadow: 6px 6px 0px #000000;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         /* Dark mode project card with retro styling */
         .dark-mode .project-card .card-body {
             background: var(--retro-dark-blue);
-            border-top: 4px solid var(--retro-green);
+            border-top: 2.8px solid var(--retro-green);  /* 70% of 4px */
         }
         
         .dark-mode .project-card .card-title {
             color: var(--retro-yellow);
-            text-shadow: 2px 2px 0 #000000;
+            text-shadow: 1.4px 1.4px 0 #000000;  /* 70% of 2px */
         }
         
         .dark-mode .project-card .card-text {
             color: var(--retro-green);
-            text-shadow: 0 0 5px rgba(51, 255, 51, 0.5);
+            text-shadow: 0 0 3.5px rgba(51, 255, 51, 0.5);  /* 70% of 5px */
         }
         
         /* Retro pixelated project box */
         .project-box {
             background: var(--retro-dark-blue);
             border-radius: 0;
-            padding: 2rem;
+            padding: var(--card-padding);
             height: 100%;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
-            box-shadow: 6px 6px 0px #000000;
-            margin-bottom: 20px;
-            border: 4px solid #ffffff;
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
+            margin-bottom: 14px;  /* 70% of 20px */
+            border: 2.8px solid #ffffff;  /* 70% of 4px */
         }
         
         .dark-mode .project-box {
             background: var(--retro-dark-blue);
-            border: 4px solid var(--retro-green);
-            box-shadow: 6px 6px 0px #000000;
+            border: 2.8px solid var(--retro-green);  /* 70% of 4px */
+            box-shadow: 4.2px 4.2px 0px #000000;  /* 70% of 6px */
         }
         
         .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 10px 10px 0px #000000;
+            transform: translateY(-2.1px);  /* 70% of -3.5px */
+            box-shadow: 5.6px 5.6px 0px #000000;  /* 70% of 8px */
         }
         
         .dark-mode .project-box:hover {
-            box-shadow: 10px 10px 0px #000000;
+            box-shadow: 5.6px 5.6px 0px #000000;  /* 70% of 8px */
         }
         
         .project-icon {
-            width: 60px;
-            height: 60px;
+            width: var(--icon-size-lg);  /* 70% of 60px */
+            height: var(--icon-size-lg);  /* 70% of 60px */
             border-radius: 0;
             background: var(--retro-green);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.05rem;  /* 70% of 1.5rem */
             transition: all 0.3s ease;
-            border: 3px solid #ffffff;
-            box-shadow: 3px 3px 0px #000000;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
         }
         
         .project-box:hover .project-icon {
@@ -874,16 +896,16 @@
         
         .project-icon i {
             color: #000000;
-            font-size: 1.8rem;
-            text-shadow: 1px 1px 0 #ffffff;
+            font-size: 1.26rem;  /* 70% of 1.8rem */
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
         
         .project-title {
-            font-size: 1.4rem;
+            font-size: 0.98rem;  /* 70% of 1.4rem */
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.7rem;  /* 70% of 1rem */
             color: var(--retro-yellow);
-            text-shadow: 2px 2px 0 #000000;
+            text-shadow: 1.4px 1.4px 0 #000000;  /* 70% of 2px */
             font-family: var(--font-heading);
         }
         
@@ -893,8 +915,8 @@
         
         .project-description {
             color: var(--retro-green);
-            margin-bottom: 1.5rem;
-            text-shadow: 0 0 5px rgba(51, 255, 51, 0.5);
+            margin-bottom: 1.05rem;  /* 70% of 1.5rem */
+            text-shadow: 0 0 3.5px rgba(51, 255, 51, 0.5);  /* 70% of 5px */
         }
         
         .dark-mode .project-description {
@@ -903,13 +925,13 @@
         
         /* Retro filter buttons */
         [data-filter] {
-            margin: 0 6px;
-            padding: 8px 20px;
+            margin: 0 5.6px;  /* 70% of 6px */
+            padding: 5.6px 14px;  /* 70% of 8px 20px */
             border-radius: 0;
             transition: all 0.3s ease;
             font-weight: 500;
-            border: 3px solid #ffffff;
-            box-shadow: 3px 3px 0px #000000;
+            border: 2.1px solid #ffffff;  /* 70% of 3px */
+            box-shadow: 2.1px 2.1px 0px #000000;  /* 70% of 3px */
             text-transform: uppercase;
             font-family: var(--font-heading);
         }
@@ -918,13 +940,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
+            gap: 7px;  /* 70% of 10px */
+            margin-bottom: 21px;  /* 70% of 30px */
         }
         
         .btn-group .btn {
-            margin: 5px;
-            min-width: 120px;
+            margin: 3.5px;  /* 70% of 5px */
+            min-width: 112px;  /* 70% of 160px */
         }
         
         /* Enhanced filter button states with retro styling */
@@ -932,15 +954,15 @@
             background-color: var(--retro-yellow);
             color: #000000;
             border-color: #ffffff;
-            box-shadow: 4px 4px 0px #000000;
-            text-shadow: 1px 1px 0 #ffffff;
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
+            text-shadow: 0.7px 0.7px 0 #ffffff;  /* 70% of 1px */
         }
         
         .dark-mode .btn-outline-primary.active {
             background-color: var(--retro-green);
             border-color: #ffffff;
             color: #000000;
-            box-shadow: 4px 4px 0px #000000;
+            box-shadow: 2.8px 2.8px 0px #000000;  /* 70% of 4px */
         }
 
         /* Scanline effect for retro CRT look */
@@ -954,9 +976,9 @@
             background: repeating-linear-gradient(
                 0deg,
                 rgba(0, 0, 0, 0.15),
-                rgba(0, 0, 0, 0.15) 1px,
-                transparent 1px,
-                transparent 2px
+                rgba(0, 0, 0, 0.15) 0.7px,
+                transparent 0.7px,
+                transparent 1.4px  /* 70% of 2px */
             );
             pointer-events: none;
             z-index: 999;
@@ -992,19 +1014,31 @@
         /* Add responsive styles for smaller screens */
         @media (max-width: 992px) {
             .navbar-brand {
-                font-size: 1.1rem;
+                font-size: 0.73rem;  /* 70% of 1.1rem */
             }
             
             .nav-link {
-                margin: 0 0.2rem;
-                font-size: 0.75rem;
+                margin: 0 0.14rem;  /* 70% of 0.2rem */
+                font-size: 0.525rem;  /* 70% of 0.75rem */
             }
         }
 
         @media (max-width: 768px) {
-            .navbar .container {
-                padding-left: 15px;
-                padding-right: 15px;
+            :root {
+                --section-padding: 63px 0;  /* 75% of reduced size for mobile */
+                --card-padding: 1.05rem;    /* 75% of reduced size for mobile */
+            }
+            
+            body {
+                font-size: 0.75rem;  /* Further reduced for mobile */
+            }
+            
+            .section-header {
+                font-size: 1.5rem;  /* Further reduced for mobile */
+            }
+            
+            .project-box, .achievement-card, .card {
+                margin-bottom: 10px;  /* Further reduced for mobile */
             }
         }
 
@@ -1040,7 +1074,133 @@
         
         /* Light mode specific styles */
         .light-mode #experience .card {
-            border: 4px solid var(--retro-light-blue);
+            border: 2.8px solid var(--retro-light-blue);  /* 70% of 4px */
+        }
+
+        /* Contact Information section improvements */
+        .contact-info-card {
+            background-color: rgba(0, 20, 40, 0.9);
+            border: 2.8px solid var(--retro-yellow);
+            box-shadow: 4.2px 4.2px 0px #000000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Add pixelated pattern to contact info background */
+        .contact-info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(0, 170, 255, 0.1),
+                rgba(0, 170, 255, 0.1) 7px,
+                rgba(0, 170, 255, 0) 7px,
+                rgba(0, 170, 255, 0) 14px
+            );
+            z-index: 0;
+        }
+
+        /* Contact info text styling */
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.4rem;
+            padding: 0.7rem;
+            background-color: rgba(0, 40, 80, 0.7);
+            border: 1.4px solid var(--retro-yellow);
+            box-shadow: 2.1px 2.1px 0px #000000;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-item:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 60, 120, 0.6);
+            box-shadow: 3.5px 3.5px 0px #000000;
+        }
+
+        .contact-info-item i {
+            color: var(--retro-yellow);
+            font-size: 1.05rem;
+            margin-right: 0.7rem;
+            text-shadow: 0.7px 0.7px 0px #000000;
+        }
+
+        .contact-info-item span {
+            color: #ffffff;
+            font-weight: 500;
+            text-shadow: 0.7px 0.7px 0px #000000;
+        }
+
+        /* Social media connection styling - improved */
+        .social-connections {
+            margin-top: 1.4rem;
+            padding-top: 1.4rem;
+            border-top: none;
+        }
+
+        .social-btn {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0;
+            background-color: rgba(0, 40, 80, 0.7);
+            border: 2.1px solid var(--retro-yellow);
+            color: var(--retro-yellow);
+            margin: 0 0.35rem;
+            transition: all 0.3s ease;
+            box-shadow: 2.1px 2.1px 0px #000000;
+            cursor: pointer;
+            z-index: 10;
+            position: relative;
+        }
+
+        .social-btn:hover {
+            background-color: var(--retro-yellow);
+            color: #000000;
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 3.5px 3.5px 0px #000000;
+        }
+        
+        .social-btn:hover i {
+            color: #000000 !important;
+        }
+
+        /* Improved hero section buttons */
+        #home .btn-outline-secondary {
+            background-color: rgba(0, 40, 80, 0.7);
+            color: var(--retro-yellow);
+            border: 2.1px solid var(--retro-yellow);
+            box-shadow: 2.8px 2.8px 0px #000000;
+            text-shadow: 0.7px 0.7px 0px #000000;
+            transition: all 0.3s ease;
+        }
+
+        #home .btn-outline-secondary:hover {
+            background-color: var(--retro-yellow);
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 4.2px 4.2px 0px #000000;
+            text-shadow: 0.7px 0.7px 0px #ffffff;
+        }
+
+        #home .btn-primary {
+            background-color: var(--retro-green);
+            color: #000000;
+            border: 2.1px solid #ffffff;
+            box-shadow: 2.8px 2.8px 0px #000000;
+            text-shadow: 0.7px 0.7px 0px #ffffff;
+        }
+
+        #home .btn-primary:hover {
+            background-color: var(--retro-yellow);
+            transform: translateY(-2px);
+            box-shadow: 4.2px 4.2px 0px #000000;
         }
     </style>
 </head>
@@ -1347,28 +1507,31 @@
                             </div>
                         </div>
                         <div class="col-lg-6 hidden">
-                            <div class="card border-0 shadow-sm h-100">
+                            <div class="card border-0 shadow-sm h-100 contact-info-card">
                                 <div class="card-body d-flex flex-column justify-content-center">
-                                    <h3 class="h4 fw-bold mb-4">Contact Information</h3>
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="fas fa-envelope fa-fw text-primary me-2"></i>
-                                        <span id="email-display">raoshubham@hotmail.com</span>
+                                    <h3 class="h4 fw-bold mb-4" style="color: var(--retro-yellow); text-shadow: 2px 2px 0px #000000;">Contact Information</h3>
+                                    
+                                    <div class="contact-info-item">
+                                        <i class="fas fa-envelope fa-fw" style="color: var(--retro-yellow); font-size: 1.2rem;"></i>
+                                        <span style="color: #ffffff; text-shadow: 1px 1px 0px #000000; font-weight: 600;">raoshubham@hotmail.com</span>
                                     </div>
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="fas fa-map-marker-alt fa-fw text-primary me-2"></i>
-                                        <span>Vijayanagar, Karnataka</span>
+                                    
+                                    <div class="contact-info-item">
+                                        <i class="fas fa-map-marker-alt fa-fw" style="color: var(--retro-yellow); font-size: 1.2rem;"></i>
+                                        <span style="color: #ffffff; text-shadow: 1px 1px 0px #000000; font-weight: 600;">Vijayanagar, Karnataka</span>
                                     </div>
-                                    <div class="mt-4">
-                                        <h4 class="h5 fw-bold mb-3">Connect With Me</h4>
-                                        <div class="d-flex gap-3">
-                                            <a href="https://github.com/raoshubham2000" class="btn btn-outline-dark rounded-circle p-3" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
-                                                <i class="fab fa-github"></i>
+                                    
+                                    <div class="social-connections">
+                                        <h4 class="h5 fw-bold" style="color: var(--retro-yellow); text-shadow: 1.5px 1.5px 0px #000000;">Connect With Me</h4>
+                                        <div class="d-flex">
+                                            <a href="https://github.com/raoshubham2000" class="social-btn" target="_blank" style="background-color: rgba(0, 40, 80, 0.9); border: 2.1px solid var(--retro-yellow);">
+                                                <i class="fab fa-github" style="color: var(--retro-yellow); font-size: 1.2rem;"></i>
                                             </a>
-                                            <a href="https://twitter.com/Raoshubham2000" class="btn btn-outline-primary rounded-circle p-3" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
-                                                <i class="fab fa-twitter"></i>
+                                            <a href="https://twitter.com/Raoshubham2000" class="social-btn" target="_blank" style="background-color: rgba(0, 40, 80, 0.9); border: 2.1px solid var(--retro-yellow);">
+                                                <i class="fab fa-twitter" style="color: var(--retro-yellow); font-size: 1.2rem;"></i>
                                             </a>
-                                            <a href="#" class="btn btn-outline-primary rounded-circle p-3" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
-                                                <i class="fab fa-linkedin-in"></i>
+                                            <a href="https://www.linkedin.com/in/shubham-r-272854303/" class="social-btn" target="_blank" style="background-color: rgba(0, 40, 80, 0.9); border: 2.1px solid var(--retro-yellow);">
+                                                <i class="fab fa-linkedin-in" style="color: var(--retro-yellow); font-size: 1.2rem;"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -1397,43 +1560,51 @@
     <script>
         // Initialize interactive elements when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize particles.js
+            // Initialize particles.js with retro game and data-themed particles
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
-                        "value": 80,
+                        "value": 50,
                         "density": {
                             "enable": true,
                             "value_area": 800
                         }
                     },
                     "color": {
-                        "value": "#33ff33"
+                        "value": ["#33ff33", "#00aaff", "#ffff00", "#ff00ff"]
                     },
                     "shape": {
-                        "type": "square",
+                        "type": ["square", "triangle", "circle"],
                         "stroke": {
-                            "width": 0,
-                            "color": "#000000"
+                            "width": 1,
+                            "color": "#ffffff"
+                        },
+                        "polygon": {
+                            "nb_sides": 4
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
                         }
                     },
                     "opacity": {
-                        "value": 0.5,
-                        "random": false,
+                        "value": 0.7,
+                        "random": true,
                         "anim": {
-                            "enable": false,
+                            "enable": true,
                             "speed": 1,
                             "opacity_min": 0.1,
                             "sync": false
                         }
                     },
                     "size": {
-                        "value": 3,
+                        "value": 5,
                         "random": true,
                         "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
+                            "enable": true,
+                            "speed": 2,
+                            "size_min": 1,
                             "sync": false
                         }
                     },
@@ -1448,12 +1619,12 @@
                         "enable": true,
                         "speed": 3,
                         "direction": "none",
-                        "random": false,
+                        "random": true,
                         "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
+                        "out_mode": "bounce",
+                        "bounce": true,
                         "attract": {
-                            "enable": false,
+                            "enable": true,
                             "rotateX": 600,
                             "rotateY": 1200
                         }
@@ -1464,7 +1635,7 @@
                     "events": {
                         "onhover": {
                             "enable": true,
-                            "mode": "repulse"
+                            "mode": "grab"
                         },
                         "onclick": {
                             "enable": true,
@@ -1473,12 +1644,28 @@
                         "resize": true
                     },
                     "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 10,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
                         "repulse": {
                             "distance": 100,
                             "duration": 0.4
                         },
                         "push": {
                             "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
                         }
                     }
                 },
