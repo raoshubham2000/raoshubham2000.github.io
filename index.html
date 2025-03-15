@@ -293,7 +293,7 @@
             position: relative;
             padding-left: 21px;  /* 70% of 30px */
             margin-bottom: 10.5px;  /* 70% of 15px */
-            border-left: 2.8px solid var(--retro-green);  /* 70% of 4px */
+            border-left: 2.8px solid var(--retro-yellow);  /* Changed from green to yellow */
         }
         
         .education-card:before {
@@ -303,11 +303,11 @@
             top: 0;
             width: 17.5px;  /* 70% of 25px */
             height: 17.5px;  /* 70% of 25px */
-            color: var(--retro-green);
+            color: var(--retro-yellow);  /* Changed from green to yellow */
             font-size: 14px;  /* 70% of 20px */
             line-height: 17.5px;  /* 70% of 25px */
             text-align: center;
-            background-color: var(--light-bg);
+            background-color: rgba(0, 30, 80, 0.8);
         }
         
         /* Retro typography */
@@ -1201,6 +1201,76 @@
             background-color: var(--retro-yellow);
             transform: translateY(-2px);
             box-shadow: 4.2px 4.2px 0px #000000;
+        }
+
+        /* Improved Education & Training card for better readability */
+        .dark-mode .card,
+        .dark-mode .achievement-card {
+            background: var(--retro-dark-blue);
+            color: var(--retro-green);
+            border: 2.8px solid #00ff00;  /* 70% of 4px */
+        }
+
+        /* Education & Training specific styling for better readability */
+        #about .card {
+            background-color: rgba(0, 30, 80, 0.8) !important;  /* Lighter blue background */
+            border: 2.8px solid var(--retro-yellow) !important;
+            box-shadow: 4.2px 4.2px 0px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .dark-mode #about .card {
+            background-color: rgba(0, 30, 80, 0.8) !important;
+            border: 2.8px solid var(--retro-yellow) !important;
+        }
+
+        #about .card .card-body {
+            padding: 1.4rem;
+        }
+
+        #about .card h3,
+        #about .card h5 {
+            color: var(--retro-yellow) !important;
+            text-shadow: 1.4px 1.4px 0px #000000 !important;
+        }
+
+        #about .card .text-muted {
+            color: #ffffff !important;
+            opacity: 0.9;
+            text-shadow: 0.7px 0.7px 0px #000000;
+        }
+
+        .education-card {
+            position: relative;
+            padding-left: 21px;
+            margin-bottom: 10.5px;
+            border-left: 2.8px solid var(--retro-yellow);  /* Changed from green to yellow */
+        }
+
+        .education-card:before {
+            content: "▶";
+            position: absolute;
+            left: -10.5px;
+            top: 0;
+            width: 17.5px;
+            height: 17.5px;
+            color: var(--retro-yellow);  /* Changed from green to yellow */
+            font-size: 14px;
+            line-height: 17.5px;
+            text-align: center;
+            background-color: rgba(0, 30, 80, 0.8);
+        }
+
+        /* Improved badge styling for better readability */
+        #about .badge {
+            background-color: var(--retro-yellow) !important;
+            color: #000000 !important;
+            font-weight: bold;
+            border: 1.4px solid #ffffff;
+            box-shadow: 1.4px 1.4px 0px #000000;
+            text-shadow: none;
+            padding: 7px 10.5px;
+            margin: 3.5px;
+            font-size: 0.7rem;
         }
     </style>
 </head>
